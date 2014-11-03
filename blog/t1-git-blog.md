@@ -10,7 +10,7 @@ Git is a distributed version control system, which means it will keep the projec
 
 So why should I choose Git and Github?
 
-![Image of fork you](/blog/octocat fork you scaled.png)
+![Image of fork you](/blog/octocat fork you scaled.png?raw=true)
 
 On git, every working directory is effectively a fork! It comes with a complete history, full version tracking capabilities and it doesn't require network access. Plus it's free, who doesn't love free stuff?
 
