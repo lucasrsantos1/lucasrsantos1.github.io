@@ -1,0 +1,42 @@
+#bg {
+	background-color:#ffffff;
+	display:block;
+	width:1000px;
+}
+
+#header{
+	position:relative;
+	left:20%;
+	height:100px;
+	width:100%;
+}
+
+#header p {
+	font-size:40px;
+	text-align: center;
+}
+
+#right {
+	position:absolute;
+	display:block;
+	float:right;
+	top:100px;
+	right:13%;
+}
+
+#postheader {
+	top:-30px;
+	position:relative;
+	left:20%;
+	text-align: center;
+}
+
+
+.postbody {
+	position:relative;
+	top:0px;
+	left:35%;
+	display:block;
+	width: 800px;
+}
+
