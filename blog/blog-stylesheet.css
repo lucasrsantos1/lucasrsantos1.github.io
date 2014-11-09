@@ -6,7 +6,7 @@
 
 #header{
 	position:relative;
-	left:20%;
+	left:25%;
 	height:100px;
 	width:100%;
 }
@@ -24,19 +24,17 @@
 	right:13%;
 }
 
-#postheader {
-	top:-30px;
-	position:relative;
-	left:20%;
-	text-align: center;
-}
-
-
-.postbody {
+#blogpost {
 	position:relative;
 	top:0px;
-	left:35%;
+	margin-left:35%;
 	display:block;
 	width: 80%;
+	font-size: 14px;
+}
+
+#blogheader {
+	text-align: center;
+	font-size:18px;
 }
 
