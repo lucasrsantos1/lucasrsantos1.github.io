@@ -1,40 +1,31 @@
-/*#bg {
-	background-color:#ffffff;
-	display:block;
-	width:1000px;
-}
-
-body{
-	width:100%;
-}
-
-#header{
-	position:relative;
-	left:25%;
-	height:100px;
-	width:100%;
+#bg {
+	width:80%;
+	margin:auto;
 }
 
 #header p {
 	font-size:40px;
 	text-align: center;
+	padding-right:20%;
 }
 
-#right {
-	position:absolute;
+#sidebar {
+	float:right;
+	width:auto;
+/*	position:absolute;
 	display:block;
 	float:right;
 	top:100px;
-	right:13%;
+	right:10%;*/
 }
 
 #blogpost {
-	position:relative;
+	width:80%;
+	float:left;
+/*	position:relative;
 	top:0px;
-	margin-left:35%;
 	display:block;
-	width: 80%;
-	font-size: 14px;
+	font-size: 14px;*/
 }
 
 #blogheader {
@@ -42,4 +33,3 @@ body{
 	font-size:18px;
 }
 
-*/
