@@ -28,8 +28,14 @@
 	font-size: 14px;*/
 }
 
+#blogpost img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
 #blogheader {
 	text-align: center;
 	font-size:18px;
 }
+
 
