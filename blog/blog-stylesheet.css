@@ -12,21 +12,12 @@
 #sidebar {
 	float:right;
 	width:auto;
-/*	position:absolute;
-	display:block;
-	float:right;
-	top:100px;
-	right:10%;*/
 }
 
 #blogpost {
 	width:70%;
 	float:left;
-/*	position:relative;
-	top:0px;
-	display:block;
-	font-size: 14px;*/
-}
+
 
 #blogpost img {
 	max-width: 100%;
