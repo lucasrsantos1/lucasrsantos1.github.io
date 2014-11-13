@@ -1,23 +1,49 @@
 #bg {
-	width:80%;
+	position:relative;
+	max-width:1000px;
 	margin:auto;
 }
 
+body {
+	margin:0px;
+	font-family:sans-serif;
+}
+
 #header p {
+	position:relative;
 	font-size:40px;
 	text-align: center;
 	padding-right:20%;
 }
 
+#logo {
+	position:relative;
+	font-size:80px;
+	top:20px;
+	text-align: center;
+	font-family:monospace;
+	text-shadow: 2px 10px 10px #888;
+}
+
+#logo a {
+	color:black;
+}
+
 #sidebar {
-	float:right;
-	width:auto;
+	position:absolute;
+	max-width:200px;
+	height:400px;
+	margin-bottom:;
+	right:5%;
+	display:block;
+	text-align: center;
 }
 
 #blogpost {
+	position: relative;
 	width:70%;
 	float:left;
-
+}
 
 #blogpost img {
 	max-width: 100%;
@@ -27,6 +53,22 @@
 #blogheader {
 	text-align: center;
 	font-size:18px;
+}
+
+li {
+	position:relative;
+	display:block;
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color:white;
 }
 
 
