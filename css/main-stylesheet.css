@@ -1,6 +1,7 @@
 #bg {
 	position: relative;
 	max-width:1000px;
+	min-width:900px;
 	height:100%;
 	min-height:980px;
 	margin-left:auto;
