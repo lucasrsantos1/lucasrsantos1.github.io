@@ -29,12 +29,15 @@ body {
 	font-family:sans-serif;
 }
 
+#header li {
+	border-bottom: 1px solid;
+}
+
 li {
 	position:relative;
 	display:inline;
 	padding-right:10px;
 	padding-bottom: 20px;
-	border-bottom: 1px solid;
 }
 
 #header a:link {
@@ -105,6 +108,11 @@ aside #avatar {
 	padding-top: 15px;
 	border-bottom: 1px solid;
 	padding-bottom: 15px;
+	min-height:315px;
+}
+
+#featured a {
+	display:block;
 }
 
 #footer {
@@ -113,4 +121,11 @@ aside #avatar {
 	width:100%;
 	height:10%;
 	text-align: center;
+}
+
+#more a {
+	text-decoration: none;
+	position:absolute;
+	right:0px;
+	bottom:0px;
 }
