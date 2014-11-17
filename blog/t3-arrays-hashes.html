@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title> Blog </title>
+	<link rel="stylesheet" type="text/css" href="blog-stylesheet.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div id="bg">
+		<div id="header">
+			<span id="logo"><p><a href="lucasrsantos1.github.io">Lucas Santos</a></p></span>
+		</div>
+		<div id="blogpost">
+			<span id="blogheader">
+			<p> dbc_hashes = {Hashes => "Awesome"} </p>
+			<p> dbc_arrays = ["Amazing"] </p>
+			<p> 16/11/2014 </p></span>
+			<p>When you have lots of similar content that you wanna store on variables, you could create multiple variables, but that wouldn't really be an effective solution, would it?</p>
+			<p>That's why we have arrays! Instead of my_book1, my_book2, my_book3, etc. You could just create an array called my_books and store all the books in there. Just like this:</p>
+			<code>
+				my_books = ["Harry Potter and The Philosopher's Stone", "Harry Potter and The Half-Blood Prince", "Harry Potter and The Deathly Hallows"]
+			</code>
+			<p>Now, isn't that better? But what if you wanted to store your books' titles and say... their ratings on the same place, can you do that? You can! That's why we have Hashes!</p>
+			<p> Hashes works with a key => value system. Just like this:</p>
+			<code>
+				my_books_ratings = {
+				"Harry Potter and The Philosopher's Stone" => "Can this get any better?",
+				"Harry Potter and The Half-Blood Prince" => "Maybe it can!",
+				"Harry Potter and The Deathly Hallows" => "Great stuff!"
+				}
+			</code>
+			<p> You can access the content on arrays using array[index], for example my_books[0] would return "Harry Potter and The Philosopher's Stone". You can also access everything on the array using iteration. You can do:</p>
+			<code>
+				my_books.each do |x|
+					puts x
+				end
+			</code>
+			<p>The code above places the books on the placeholder x and you can do whatever you want with it, on this case we printed all the names.</p>
+			<p>As for accessing the content on hashes, you can just type the name of your hash and you will get the names and keys inside it. If you just want the value to a specific key you can do my_books_ratings["Harry Potter and The Philosopher's Stone"] and you will get "Can this get any better?" as its value. You can iterate access everything on the hash using iteration. You can do:</p>
+			<code>
+				my_books_ratings.each do |x, y|
+					puts "Title: #{x}, Rating: #{y}"
+				end
+			</code>
+			<p> The code above the titles on the placeholder x and the ratings on the placeholder y and you can do whatever you want with them, on this case we printed them side by side. Be mindful that you can access only the values, only the keys or both of them using the methods .keys and .values after calling the hash.
+
+		</div>
+			<div id="sidebar">
+			<img width="170" height"170" src="imgs/avatar.jpg">
+			<p> Lucas Santos, 20, Future Web Developer </p>
+			<a href ="https://www.facebook.com/lucasdsrsantos"><img width="20" height="20" src="socialmediaicons/facebook.png"></a>
+			<a href ="https://twitter.com/lukinhaas21"><img width="20" height="20" src="socialmediaicons/twitter.png"></a>
+			<a href ="https://github.com/lucasrsantos1"><img width="20" height="20" src="socialmediaicons/github.png"></a>
+			<a href ="https://plus.google.com/+LucasSantos21/posts"><img width="20" height="20" src="socialmediaicons/gplus.png"></a>
+			<a href ="http://br.linkedin.com/pub/lucas-santos/a5/587/971/"><img width="20" height="20" src="socialmediaicons/linkedin.png"></a>
+			<a href ="http://www.quora.com/Lucas-Santos-23"><img width="20" height="20" src="socialmediaicons/quora.png"></a>
+			<a href ="https://news.ycombinator.com/user?id=lukinhaas21"><img width="20" height="20" src="socialmediaicons/hackernews.png"></a>
+	    <div id="twitter">
+	      <a class="twitter-timeline" href="https://twitter.com/lukinhaas21" data-widget-id="531521005739470848">Tweets by @lukinhaas21</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	    </div>
+	</div>
+
+
+</body>
+</html>
+

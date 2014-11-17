@@ -1,0 +1,43 @@
+    h1 {
+        text-align:center;
+        font-size:2.5em;
+    }
+    
+    #lucas {
+        display:inline-block;
+        margin-left:30%;
+    }
+    
+    #ivan {
+        display:inline-block;
+        margin-left:15%;
+    }
+    
+    li {
+        margin-top:5%;
+        font-weight:bold;
+        font-size:1.5em;
+        font-family:cursive, serif;
+    }
+    
+    p {
+        font-size:1.1em;
+        font-family:sans-serif;
+    }
+    
+    #header {
+        padding-top:2px;
+        height:20%;
+        color:#666;
+        background-color:black;
+    }
+    
+    a:link {
+        text-decoration:none;
+        color:#666;
+    }
+    
+    a:hover {
+        color:white;
+    }
+    
