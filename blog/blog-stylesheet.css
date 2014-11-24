@@ -71,4 +71,7 @@ a:hover {
 	color:white;
 }
 
-
+.code {
+	font-family: monospace;
+	white-space: pre-line;
+}

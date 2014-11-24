@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title> Blog </title>
+	<link rel="stylesheet" type="text/css" href="blog-stylesheet.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div id="bg">
+		<div id="header">
+			<span id="logo"><p><a href="lucasrsantos1.github.io">Lucas Santos</a></p></span>
+		</div>
+		<div id="blogpost">
+			<span id="blogheader">
+			<p> Let's cycle until we break! </p>
+			<p> How to use Enumerable's Cycle method! </p>
+			<p> 24/11/2014 </p></span>
+			<p> Have you ever asked yourself: How can I create an infinitely-repeating ordered source of colletion items? No? Well, neither have I! But it's good to know I can! </p>
+			<p> So how do we do that? Quite simple. We just have to use the method cycle. You call it on an array and pass a block, then it will pass each array item to the block, when it finishes it will just start again from the beginning. Here goes an example: </p>
+			<code>
+				months_of_the_year.cycle {|month| puts month}
+				=> January
+				February
+				March
+				April
+				May
+				June
+				July
+				August
+				September
+				October
+				November
+				December
+				January
+				February
+				...
+			</code>
+
+			<p> Just cycling through things indefinitely doesn't sound too useful, does it? What useful things can I do with it? That's a good question! 
+			You can store the cycling array inside a variable and use .next inside it to find what comes next. </p>
+			<code>
+				months = months_of_the_year.cycle
+				months.next
+				=> February
+			</code>
+			<p> If you want to start over you can use .rewind instead of .next and it will go back to the beginning. </p>
+			<p> Let's try a more practical example: </p>
+			<p class="code">
+				months = %w{January February March April May June July August September October November December}.cycle 
+				topics = %w{Git Github HTML CSS Ruby RoR JavaScript Sinatra Logic Yoga EmotionalIntelligence Empathy Node Angular}.cycle
+				14.times do
+					month = months.next
+					topic = topics.next
+					puts "On #{month} we will learn #{topic}"
+				end
+			</p>
+			<p> The code above will assign each topic to a month and since we have more topics than we have months it will keep assigning topics from january after it passes december. </p>
+			<p> I hope this was easy to follow and you learned something from it! </p>
+
+		</div>
+			<div id="sidebar">
+			<img width="170" height"170" src="imgs/avatar.jpg">
+			<p> Lucas Santos, 20, Future Web Developer </p>
+			<a href ="https://www.facebook.com/lucasdsrsantos"><img width="20" height="20" src="socialmediaicons/facebook.png"></a>
+			<a href ="https://twitter.com/lukinhaas21"><img width="20" height="20" src="socialmediaicons/twitter.png"></a>
+			<a href ="https://github.com/lucasrsantos1"><img width="20" height="20" src="socialmediaicons/github.png"></a>
+			<a href ="https://plus.google.com/+LucasSantos21/posts"><img width="20" height="20" src="socialmediaicons/gplus.png"></a>
+			<a href ="http://br.linkedin.com/pub/lucas-santos/a5/587/971/"><img width="20" height="20" src="socialmediaicons/linkedin.png"></a>
+			<a href ="http://www.quora.com/Lucas-Santos-23"><img width="20" height="20" src="socialmediaicons/quora.png"></a>
+			<a href ="https://news.ycombinator.com/user?id=lukinhaas21"><img width="20" height="20" src="socialmediaicons/hackernews.png"></a>
+	    <div id="twitter">
+	      <a class="twitter-timeline" href="https://twitter.com/lukinhaas21" data-widget-id="531521005739470848">Tweets by @lukinhaas21</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	    </div>
+	</div>
+
+
+</body>
+</html>
+
