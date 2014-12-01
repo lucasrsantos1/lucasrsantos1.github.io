@@ -11,17 +11,40 @@
 		</div>
 		<div id="blogpost">
 			<span id="blogheader">
-			<p> Layout, YOU SHALL NOT BREAK! </p>
-			<p> Good practices for HTML/CSS </p>
-			<p> 12/11/2014 </p></span>
-			<p> This was a hard week for me, I always had a hard time with design and to make things worse I got really sick. ='(
-				After spending some time on my website I finally finished it and I was really happy about it. So happy that I sent it to a friend and was expecting some good news! Unfortunately that's not what I got, after opening the site he told me the layout was a mess. That's when I learned the hard way that you have to consider a lot of things when styling your site. Then I took some classes on tutsplus.com(It's paid, but it's worth every penny) which helped me a lot and after some hours I finally had a layout that wouldn't break for no apparent reason! In fact I think this one won't break at all! </p>
+			<p> Why is Ruby so full of class? </p>
+			<p> Because it is object oriented! </p>
+			<p> 30/11/2014 </p></span>
+			<p> This week I'm going to cover Ruby Classes! The best definition of classes I could find is that they are object blueprints. You put the object's attributes and methods inside the class, then you create a new object of that class by instantiating it. That may sound confusing but I am sure you will understand it after looking at an example.</p>
+			<p class="code">
+				class Person
+					attr_accessor :name, :age, :gender, :profession
+					def initialize
+						@name = "Lucas"
+						@age = 20
+						@gender = "Male"
+						@profession = "Systems Analyst"
+					end
 
-				<p>Enough blabbering, time to drop some knowledge! I'm going to tell you about Classes vs IDs and display inline vs inline blocks!</p>
+					def print_info
+						p "Name: #{@name}"
+						p "Age: #{@age}"
+						p "Gender: #{@gender}"
+						p "Profession: #{@profession}"
+					end
+				end
 
-<p>When it comes to classes versus IDs, you should use classes for styles that you plan to use multiple times and/or on multiple elements while IDs are for styles that should be used only once. You could do it differently, but just don't! It's a good practice!</p>
+				person = Person.new
+				person.print_info
+			</p>
+			<p> On the example above, we create a blueprint for a person with name, age, gender and profession. We created the getters and setters using attr_accessor and initialized all the attributes. Then we created a method to print all the info. Finally we created an object of the class Person using Person.new and called its method print_info.</p>
+			<p class="output"> The output is:
+						Name: Lucas
+						Age: 20
+						Gender: Male
+						Profession: Systems Analyst
+			</p>
+			<p> That's it for today, later on I'll post a more in-depth tutorial on Ruby Classes. </p>
 
-<p>Let's wrap this with the differences between inline and inline blocks. An inline element has no line break before or after it, doesn't have any white spaces above or below it and it accepts HTML elements next to it. A block element demands it own line, has some whitespace above and below it and does not accept any HTML elements next to it. An inline-block element is placed as an inline element, but it has borders (whitespace above and below).</p>
 
 		</div>
 			<div id="sidebar">

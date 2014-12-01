@@ -7,7 +7,7 @@
 <body>
 	<div id="bg">
 		<div id="header">
-			<span id="logo"><p><a href="lucasrsantos1.github.io">Lucas Santos</a></p></span>
+			<span id="logo"><p><a href="https://lucasrsantos1.github.io">Lucas Santos</a></p></span>
 		</div>
 		<div id="blogpost">
 			<span id="blogheader">
@@ -16,7 +16,7 @@
 			<p> 24/11/2014 </p></span>
 			<p> Have you ever asked yourself: How can I create an infinitely-repeating ordered source of colletion items? No? Well, neither have I! But it's good to know I can! </p>
 			<p> So how do we do that? Quite simple. We just have to use the method cycle. You call it on an array and pass a block, then it will pass each array item to the block, when it finishes it will just start again from the beginning. Here goes an example: </p>
-			<code>
+			<p class="code">
 				months_of_the_year.cycle {|month| puts month}
 				=> January
 				February
@@ -33,15 +33,15 @@
 				January
 				February
 				...
-			</code>
+			</p>
 
 			<p> Just cycling through things indefinitely doesn't sound too useful, does it? What useful things can I do with it? That's a good question! 
 			You can store the cycling array inside a variable and use .next inside it to find what comes next. </p>
-			<code>
+			<p class="code">
 				months = months_of_the_year.cycle
 				months.next
 				=> February
-			</code>
+			</p>
 			<p> If you want to start over you can use .rewind instead of .next and it will go back to the beginning. </p>
 			<p> Let's try a more practical example: </p>
 			<p class="code">
