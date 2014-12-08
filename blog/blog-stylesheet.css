@@ -55,7 +55,7 @@ body {
 	font-size:18px;
 }
 
-li {
+.bloglinks {
 	position:relative;
 	display:block;
 	padding-top:10px;

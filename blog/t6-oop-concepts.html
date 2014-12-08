@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title> Blog </title>
+	<link rel="stylesheet" type="text/css" href="blog-stylesheet.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div id="bg">
+		<div id="header">
+			<span id="logo"><p><a href="https://lucasrsantos1.github.io">Lucas Santos</a></p></span>
+		</div>
+		<div id="blogpost">
+			<span id="blogheader">
+			<p> To instantiate or not to instantiate, that is the question! </p>
+			<p> Differences between classes and modules. </p>
+			<p> 08/12/2014 </p></span>
+			<p> What are the differences between classes and modules? Well, let's start with classes, shall we? </p>
+			<ul>
+				<li> A class can be instantiated! </li>
+				<li> A class is used for object creation. </li>
+				<li> It's superclass is Module. (WHAT?) </li>
+				<li> It consists of class methods, instance methods, constants and variables. </li>
+				<li> It can inherit from others and it can be inherited. </li>
+				<li> It cannot be included </li>
+				<li> You can only extend using inheritance. </li>
+			</ul>
+			<p> So when should we use classes? Classes are about objects. You should use them to model and create objects mostly. </p>
+			<p> What about modules? </p>
+			<ul>
+				<li> A module cannot be instantiated! </li>
+				<li> It is used to provide methods to multiple classes. </li>
+				<li> It's superclass is object. </li>
+				<li> It consists of module methods, instance methods, constants and classes. </li> It cannot inherit or be inherited. </li>
+				<li> It can be included in classes and other modules by using the include command. </li>
+				<li> A module can extend an instance by using the extend command. </li>
+			</ul>
+			<p> When should we use modules? Modules are about methods. You should use them to provide methods to multiple classes. Modules are VERY important because ruby doesn't allow multiple inheritance. If you are familiar with other languages it might help you to consider modules as libs or static classes. </p>
+			<p> The main thing to consider is that even though they are both a collection of methods, constants, etc. you can instantiate classes but not modules. Since Ruby has no multiple inheritance you need modules to "emulate" it. </p>
+			<p> Quiz time... Which came first, the class or the object? </p>
+			<p> This is really confusing, but the object came first! An Object inherits from BasicObject and includes the Kernel module, so it has the instance methods of the Kernel, like puts! </p>
+
+
+		</div>
+			<div id="sidebar">
+			<img width="170" height"170" src="imgs/avatar.jpg">
+			<p> Lucas Santos, 20, Future Web Developer </p>
+			<a href ="https://www.facebook.com/lucasdsrsantos"><img width="20" height="20" src="socialmediaicons/facebook.png"></a>
+			<a href ="https://twitter.com/lukinhaas21"><img width="20" height="20" src="socialmediaicons/twitter.png"></a>
+			<a href ="https://github.com/lucasrsantos1"><img width="20" height="20" src="socialmediaicons/github.png"></a>
+			<a href ="https://plus.google.com/+LucasSantos21/posts"><img width="20" height="20" src="socialmediaicons/gplus.png"></a>
+			<a href ="http://br.linkedin.com/pub/lucas-santos/a5/587/971/"><img width="20" height="20" src="socialmediaicons/linkedin.png"></a>
+			<a href ="http://www.quora.com/Lucas-Santos-23"><img width="20" height="20" src="socialmediaicons/quora.png"></a>
+			<a href ="https://news.ycombinator.com/user?id=lukinhaas21"><img width="20" height="20" src="socialmediaicons/hackernews.png"></a>
+	    <div id="twitter">
+	      <a class="twitter-timeline" href="https://twitter.com/lukinhaas21" data-widget-id="531521005739470848">Tweets by @lukinhaas21</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	    </div>
+	</div>
+
+
+</body>
+</html>
+
