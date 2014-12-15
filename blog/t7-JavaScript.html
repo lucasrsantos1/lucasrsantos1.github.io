@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title> Blog </title>
+	<link rel="stylesheet" type="text/css" href="blog-stylesheet.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div id="bg">
+		<div id="header">
+			<span id="logo"><p><a href="https://lucasrsantos1.github.io">Lucas Santos</a></p></span>
+		</div>
+		<div id="blogpost">
+			<span id="blogheader">
+			<p> Operations on Strings! </p>
+			<p> Differences between Ruby and JavaScript. </p>
+			<p> 15/12/2014 </p></span>
+			<p> One of the first differences I found while studying JavaScript is that the only operation you can perform on strings is +, which is used for concatenating.
+				On Ruby you can also use * to multiply the sentence or pieces of it. Like this: </p>
+			<p class="code">
+				i = 1
+				10.times do
+					puts "*" * i
+					i += 1
+				end
+			</p>
+			<p> This will print a triangle with 10 rows in Ruby. To do the same thing on JavaScript we would need to do: </p>
+				
+			<p class="code">
+				for(var i="*"; i!="***********"; i+="*"){
+					console.log(i);
+				}
+			</p>
+
+			<p> As you can see, on the JavaScript example I had to concatenate the new stars while on the Ruby example I just multiplied it. I could get the same result by typing 10 stars and telling the loop to keep adding * until it the row had 11 stars. This would be unviable if I wanted to make a triangle with 1000 rows. </p>
+			<p> The solution would be creating a function to do that for you. Like this one: </p>
+
+			<p class="code">
+				function repeat(string, multiplier){
+				    var stringRepeated = [];
+				    while(stringRepeated.length < multiplier){
+				        stringRepeated.push(string);
+				    }
+				    return stringRepeated.join('');
+				}
+			</p>
+
+			<p> This function accepts the string to be repeated and the number of times you want to repeat it as parameters, then it creates an array which will receive the string until its length is the same as the multiplier. Then you join the all the elements in the array as one. And now we can multiply strings on JavaScript! </p>
+
+
+		</div>
+			<div id="sidebar">
+			<img width="170" height"170" src="imgs/avatar.jpg">
+			<p> Lucas Santos, 20, Future Web Developer </p>
+			<a href ="https://www.facebook.com/lucasdsrsantos"><img width="20" height="20" src="socialmediaicons/facebook.png"></a>
+			<a href ="https://twitter.com/lukinhaas21"><img width="20" height="20" src="socialmediaicons/twitter.png"></a>
+			<a href ="https://github.com/lucasrsantos1"><img width="20" height="20" src="socialmediaicons/github.png"></a>
+			<a href ="https://plus.google.com/+LucasSantos21/posts"><img width="20" height="20" src="socialmediaicons/gplus.png"></a>
+			<a href ="http://br.linkedin.com/pub/lucas-santos/a5/587/971/"><img width="20" height="20" src="socialmediaicons/linkedin.png"></a>
+			<a href ="http://www.quora.com/Lucas-Santos-23"><img width="20" height="20" src="socialmediaicons/quora.png"></a>
+			<a href ="https://news.ycombinator.com/user?id=lukinhaas21"><img width="20" height="20" src="socialmediaicons/hackernews.png"></a>
+	    <div id="twitter">
+	      <a class="twitter-timeline" href="https://twitter.com/lukinhaas21" data-widget-id="531521005739470848">Tweets by @lukinhaas21</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	    </div>
+	</div>
+
+
+</body>
+</html>
+
