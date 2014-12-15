@@ -79,3 +79,7 @@ a:hover {
 .output {
 	white-space: pre;
 }
+
+.br {
+	white-space: pre-line;
+}
