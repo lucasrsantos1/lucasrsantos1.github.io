@@ -1,75 +1,123 @@
+<!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title> Lucas Santos </title>
 	<link rel="stylesheet" type="text/css" href="css/main-stylesheet.css" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<div class="container-fluid">
 
-<div id="bg">
-	<div id="header">
-		<span id="logo"><p>Lucas Santos</p></span>
-		<div id="header-buttons">
-			<ul>
-				<li><a href="#"> Articles </a></li>
-				<li><a href="#"> News </a></li>
-				<li><a href="#"> Tutorials </a></li>
-				<li><a href="blog/index.html"> Blog </a></li>
-				<li><a href="#"> About Me </a></li>
-				<li><a href="#"> Contact </a></li>
-				<li><a href="cheat-sheet.html"> My Work </a></li>
-				<li>
-					<input id="search" type="text" placeholder="Search...">
-		            <input id="button" type="button" value="Search">
-		        </li>
-			</ul>
+		<!-- Header Row and Div -->
 
+		<div class="row">
+			<div class="col-md-12">
+				<header>
+					<span id="logo"><p>Lucas Santos</p></span>
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="#"> Home </a>
+							</div>
+							<div>
+								<ul class="nav navbar-nav">
+									<li><a href="#"> Articles </a></li>
+									<li><a href="#"> News </a></li>
+									<li><a href="#"> Tutorials </a></li>
+									<li><a href="blog/index.html"> Blog </a></li>
+									<li><a href="#"> About Me </a></li>
+									<li><a href="#"> Contact </a></li>
+									<li><a href="#"> My Work</a></li>
+									<li><form class="navbar-form" role="search">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+											<div class="input-group-btn">
+												<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+											</div>
+										</div>
+									</form>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					</div>
+				</header>
+			</div>
 		</div>
-	</div>
-	<aside>
-		<img id="avatar" src="imgs/avatar.jpg">
-		<div class="socialmedia">
-			<a href ="https://www.facebook.com/lucasdsrsantos"><img width="20" height="20" src="imgs/socialmediaicons/facebook.png"></a>
-			<a href ="https://twitter.com/lukinhaas21"><img width="20" height="20" src="imgs/socialmediaicons/twitter.png"></a>
-			<a href ="https://github.com/lucasrsantos1"><img width="20" height="20" src="imgs/socialmediaicons/github.png"></a>
-			<a href ="https://plus.google.com/+LucasSantos21/posts"><img width="20" height="20" src="imgs/socialmediaicons/gplus.png"></a>
-			<a href ="http://br.linkedin.com/pub/lucas-santos/a5/587/971/"><img width="20" height="20" src="imgs/socialmediaicons/linkedin.png"></a>
-			<a href ="http://www.quora.com/Lucas-Santos-23"><img width="20" height="20" src="imgs/socialmediaicons/quora.png"></a>
-			<a href ="https://news.ycombinator.com/user?id=lukinhaas21"><img width="20" height="20" src="imgs/socialmediaicons/hackernews.png"></a>
-		</div>
-		<p> Lucas Santos, 20, Future Web Developer </p>
-		<div id="twitter">
-			<a class="twitter-timeline" href="https://twitter.com/lukinhaas21" data-widget-id="531521005739470848">Tweets by @lukinhaas21</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</div>
-	</aside>
-	<div id="content">
-		<h1> Lorem Ipsum </h>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at purus risus. Cras egestas enim sit amet suscipit lobortis. Vivamus sit amet suscipit metus, ut fermentum sem. Nullam semper iaculis commodo. Nulla viverra consectetur est sed vehicula. Donec lobortis euismod metus, nec vestibulum neque feugiat a. Proin justo lacus, gravida a lacus sit amet, sollicitudin tincidunt ipsum. Aenean dictum dolor eu sem laoreet, eu hendrerit metus congue. Curabitur nibh magna, dictum sit amet ullamcorper sed, ultrices nec purus. Duis porta dapibus nisl a egestas.</p>
-		<div id="featured">
-			<ul>
-				<li><a href="blog/t1-git-blog.html">Gitting real with octocat!</a></li>
-				<li><a href="blog/c1-chefs-kitchen.html">Squirrels do not order food!</a></li>
-				<li><a href="blog/t2-css-design.html">Layout, YOU SHALL NOT BREAK!</a></li>
-				<li><a href="blog/t3-arrays-hashes.html">dbc_hashes = {Hashes => "Awesome"}</a></li>
-				<li><a href="blog/c3-thinking-style.html">Thinking outside of the box!</a></li>
-				<li><a href="blog/t4-enumerable-methods.html">Let's cycle until we break!</a></li>
-				<li><a href="blog/c4-tech-issues.html">Can a programmer... program?</a></li>
-				<li><a href="blog/t5-ruby-classes.html">Why is Ruby so full of class?</a></li>
-				<li><a href="blog/c5-feedback.html">Two heads are better than one!</a></li>
-				<li><a href="blog/t6-oop-concepts.html">To instantiate or not to instantiate, that is the question!</a></li>
-				<li><a href="blog/c6-stereotype-threat.html">You won't know until you try it!</a></li>
-				<li><a href="blog/t7-JavaScript.html">Operations on Strings!</a></li>
-				<li><a href="blog/c7-values.html">I can and I will!</a></li>
-				<li><a href="blog/t8-tech.html">What is Recursion?</a></li>
-				<li><a href="blog/c8-conflict.html">Internal Conflicts.</a></li>
-			</ul>
-				<div id="more"><a href="lucasrsantos1.github.io/blog/index.html">More...</a></div></div>
-	</div>
-	<div id="footer">
-		Contact Me: lucasrsantos1@gmail.com
-	</div>
-</div>
 
-</body>
-</html>
+		<!-- Content and Sidebar Row -->
+		<!-- Content Div -->
+
+		<div class="row">
+			<div class="col-md-8 content">
+				<div class="container-fluid">
+				<div class="jumbotron">
+					<h1> Welcome </h>
+						<p>I am Lucas Santos, a future web developer attending Dev Bootcamp in NYC and this is my site! I already had some previous work experience in tech, so I am not entirely new to the development world. What I want though is to become a full stack developer and I think DBC was the right choice as the first step in my journey! </p>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<ul class="list-group">
+						<li class="list-group-item"><a href="blog/t1-git-blog.html"><span class="badge">TECH</span> Gitting real with octocat!</a></li>
+						<li class="list-group-item"><a href="blog/c1-chefs-kitchen.html"><span class="badge">CULT</span> Squirrels do not order food!</a></li>
+						<li class="list-group-item"><a href="blog/t2-css-design.html"><span class="badge">TECH</span> Layout, YOU SHALL NOT BREAK!</a></li>
+						<li class="list-group-item"><a href="blog/t3-arrays-hashes.html"><span class="badge">TECH</span> dbc_hashes = {Hashes => "Awesome"}</a></li>
+						<li class="list-group-item"><a href="blog/c3-thinking-style.html"><span class="badge">CULT</span> Thinking outside of the box!</a></li>
+						<li class="list-group-item"><a href="blog/t4-enumerable-methods.html"><span class="badge">TECH</span> Let's cycle until we break!</a></li>
+						<li class="list-group-item"><a href="blog/c4-tech-issues.html"><span class="badge">CULT</span> Can a programmer... program?</a></li>
+						<li class="list-group-item"><a href="blog/t5-ruby-classes.html"><span class="badge">TECH</span> Why is Ruby so full of class?</a></li>
+						<li class="list-group-item"><a href="blog/c5-feedback.html"><span class="badge">CULT</span> Two heads are better than one!</a></li>
+						<li class="list-group-item"><a href="blog/t6-oop-concepts.html"><span class="badge">TECH</span> To instantiate or not to instantiate, that is the question!</a></li>
+						<li class="list-group-item"><a href="blog/c6-stereotype-threat.html"><span class="badge">CULT</span> You won't know until you try it!</a></li>
+						<li class="list-group-item"><a href="blog/t7-JavaScript.html"><span class="badge">TECH</span> Operations on Strings!</a></li>
+						<li class="list-group-item"><a href="blog/c7-values.html"><span class="badge">CULT</span> I can and I will!</a></li>
+						<li class="list-group-item"><a href="blog/t8-tech.html"><span class="badge">TECH</span> What is Recursion?</a></li>
+						<li class="list-group-item"><a href="blog/c8-conflict.html"><span class="badge">CULT</span> Internal Conflicts.</a></li>
+					</ul>
+					<ul class="pagination">
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+					</ul>
+				</div>
+			</div>
+
+				<!-- Sidebar Div -->
+
+				<div class="col-md-2">
+					<img class="img-circle" id="avatar" src="imgs/avatar.jpg">
+					<div class="socialmedia">
+						<a href ="https://www.facebook.com/lucasdsrsantos"><img width="20" height="20" src="imgs/socialmediaicons/facebook.png"></a>
+						<a href ="https://twitter.com/lukinhaas21"><img width="20" height="20" src="imgs/socialmediaicons/twitter.png"></a>
+						<a href ="https://github.com/lucasrsantos1"><img width="20" height="20" src="imgs/socialmediaicons/github.png"></a>
+						<a href ="https://plus.google.com/+LucasSantos21/posts"><img width="20" height="20" src="imgs/socialmediaicons/gplus.png"></a>
+						<a href ="http://br.linkedin.com/pub/lucas-santos/a5/587/971/"><img width="20" height="20" src="imgs/socialmediaicons/linkedin.png"></a>
+						<a href ="http://www.quora.com/Lucas-Santos-23"><img width="20" height="20" src="imgs/socialmediaicons/quora.png"></a>
+						<a href ="https://news.ycombinator.com/user?id=lukinhaas21"><img width="20" height="20" src="imgs/socialmediaicons/hackernews.png"></a>
+					</div>
+					<p> Lucas Santos, 20, Future Web Developer </p>
+					<div id="twitter">
+						<a class="twitter-timeline" href="https://twitter.com/lukinhaas21" data-widget-id="531521005739470848">Tweets by @lukinhaas21</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Row and Div -->
+
+			<div class="container-fluid">
+			<div class="row">
+				<div class-"col-md-12">
+					<span id="contact"> Contact me: </span><span id="contactme"> lucasrsantos1@gmail.com </span>
+				</div>
+			</div>
+		</div>
+			<script src="http://code.jquery.com/jquery.min.js"></script>
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		</body>
+		</html>
