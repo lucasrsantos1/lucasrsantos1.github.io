@@ -36,6 +36,6 @@ header a:hover {
 #contactme {
 	font-size:30px;
 	text-align: center;
-	font-family:monospace;
-	text-shadow: 2px 10px 10px #888;
+	font-family: monospace;
+	/*text-shadow: 2px 10px 10px #888;*/
 }
